@@ -15,6 +15,6 @@ const server = new ApolloServer({
   resolvers,
   context: ({ req }) => ({ req })
 });
-server.listen(3000, () => {
-  console.log("Serving on the port number 3000");
+server.listen(5000, () => {
+  console.log("Serving on the port number 5000");
 });
