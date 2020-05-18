@@ -1,7 +1,7 @@
 const { AuthenticationError, UserInputError } = require('apollo-server');
 
 const Post = require('../../models/Post');
-const checkAuth = require("../../utils/check-auth");
+const checkAuth = require('../../utils/check-auth');
 
 module.exports = {
   Query: {
@@ -30,7 +30,7 @@ module.exports = {
     async createPost(_, { body }, context) {
       const user = checkAuth(context);
 
-      if (args.body.trim() === '') {
+      if (body.trim() === '') {
         throw new Error('Post body must not be empty');
       }
 

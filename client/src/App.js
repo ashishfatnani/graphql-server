@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import { AuthProvider } from "./context/auth";
-import AuthRoute from "./util/AuthRoute";
+import AuthRoute from "./utils/AuthRoute";
 
 import MenuBar from "./components/MenuBar";
 import { Container } from "semantic-ui-react";
